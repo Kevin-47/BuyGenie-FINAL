@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Membership - Fashion Hub</title>
+  <link rel="shortcut icon" href="img/myimg.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/30e8716a20.js" crossorigin="anonymous"></script>
+  <style>
+    /* Premium page specific styles */
+    .premium-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .premium-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .premium-header h1 {
+      font-size: 42px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    
+    .premium-header p {
+      font-size: 18px;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .premium-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    
+    .benefit-card {
+      flex: 1 1 300px;
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .benefit-icon {
+      font-size: 36px;
+      color: #088178;
+      margin-bottom: 20px;
+    }
+    
+    .benefit-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    
+    .benefit-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .premium-plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    
+    .plan-card {
+      flex: 1 1 300px;
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .plan-card.featured {
+      border: 2px solid #088178;
+    }
+    
+    .plan-card.featured::before {
+      content: "POPULAR";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #088178;
+      color: white;
+      padding: 5px 15px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 0 0 0 10px;
+    }
+    
+    .plan-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .plan-name {
+      font-size: 24px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    
+    .plan-price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #088178;
+      margin-bottom: 20px;
+    }
+    
+    .plan-price span {
+      font-size: 16px;
+      color: #666;
+    }
+    
+    .plan-features {
+      margin-bottom: 25px;
+    }
+    
+    .plan-features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e1e1e1;
+      color: #666;
+    }
+    
+    .premium-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .premium-form h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #222;
+    }
+    
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .form-submit {
+      background-color: #088178;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.3s ease;
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .form-submit:hover {
+      background-color: #066a63;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <section id="header">
+    <a href="#"><img src="img/logo2.png" alt="" class="logo" onclick="window.location.href='index.html'"/></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Sign-up form/index.html">Login</a></li>
+        <li id="lg-bag">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <!-- Premium Content -->
+  <div class="premium-container">
+    <div class="premium-header">
+      <h1>Join Our Premium Membership</h1>
+      <p>Unlock exclusive benefits, early access to new collections, and special discounts with our premium membership program.</p>
+    </div>
+
+    <div class="premium-benefits">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-gift"></i>
+        </div>
+        <h3>Exclusive Discounts</h3>
+        <p>Get special pricing and offers available only to our premium members. Save up to 25% on regular prices all year round.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>Free Shipping</h3>
+        <p>Enjoy free standard shipping on all orders, with no minimum purchase required. Premium members also get discounted express shipping.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h3>Early Access</h3>
+        <p>Shop new collections before they're available to the general public. Be the first to get this season's hottest styles.</p>
+      </div>
+    </div>
+
+    <div class="premium-plans">
+      <div class="plan-card">
+        <h3 class="plan-name">Basic</h3>
+        <div class="plan-price">₹499<span>/year</span></div>
+        <ul class="plan-features">
+          <li>10% Discount on all products</li>
+          <li>Free standard shipping</li>
+          <li>24-hour early access to new arrivals</li>
+          <li>Birthday gift voucher</li>
+        </ul>
+        <button class="slide-btn" onclick="document.getElementById('signup-form').scrollIntoView()">Select Plan</button>
+      </div>
+
+      <div class="plan-card featured">
+        <h3 class="plan-name">Gold</h3>
+        <div class="plan-price">₹999<span>/year</span></div>
+        <ul class="plan-features">
+          <li>15% Discount on all products</li>
+          <li>Free express shipping</li>
+          <li>48-hour early access to new arrivals</li>
+          <li>Birthday gift voucher</li>
+          <li>Seasonal gift box (4 times/year)</li>
+        </ul>
+        <button class="slide-btn" onclick="document.getElementById('signup-form').scrollIntoView()">Select Plan</button>
+      </div>
+
+      <div class="plan-card">
+        <h3 class="plan-name">Platinum</h3>
+        <div class="plan-price">₹1999<span>/year</span></div>
+        <ul class="plan-features">
+          <li>25% Discount on all products</li>
+          <li>Free priority shipping</li>
+          <li>72-hour early access to new arrivals</li>
+          <li>Premium birthday gift</li>
+          <li>Seasonal gift box (4 times/year)</li>
+          <li>Personal styling consultation</li>
+        </ul>
+        <button class="slide-btn" onclick="document.getElementById('signup-form').scrollIntoView()">Select Plan</button>
+      </div>
+    </div>
+
+    <div class="premium-form" id="signup-form">
+      <h2>Sign Up for Premium Membership</h2>
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="plan">Select Membership Plan</label>
+          <select id="plan" name="plan" required>
+            <option value="">Choose a plan</option>
+            <option value="basic">Basic - ₹499/year</option>
+            <option value="gold" selected>Gold - ₹999/year</option>
+            <option value="platinum">Platinum - ₹1999/year</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">Join Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="section-p1 section-m1">
+    <div class="col">
+       <a href="index.html"> <img class="logo" src="img/logo2.png" alt=""></a>
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> JDA Colony, Bhopal, Madhya Pradesh, India</p>
+        <p><strong>Phone: </strong> +91 9874521638 / +91 7683245869</p>
+        <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="About us page/about_us.html">About us</a>
+        <a href="cart.html">Delivery Information</a>
+        <a href="about.html">Privacy Policy</a>
+        <a href="about.html">Terms & Conditions</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="Sign-up form/index.html">Sign in</a>
+        <a href="cart.html">View Cart</a>
+        <a href="cart.html">My Wishlist</a>
+        <a href="cart.html">Track my order</a>
+        <a href="contact.html">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+           <a href="https://www.apple.com/in/app-store/"> <img src="img/pay/app.jpg" alt=""></a>
+            <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026412_creativeid_535350509915_device_c&gclid=CjwKCAiAxvGfBhB-EiwAMPakqteOimFWGqRfc_MrQhIgvpsGLSlAs6buvyy9y01Yia054AJdh250iRoCguwQAvD_BwE&gclsrc=aw.ds"> <img src="img/pay/play.jpg" alt=""></a>
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>All Rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

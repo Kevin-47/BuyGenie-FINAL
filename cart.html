@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Hub</title>
+    <!-- Adding favicon -->
+    <link rel="shortcut icon" href="img/myimg.png" type="image/x-icon">
+    <!-- Link for CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/30e8716a20.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <!-- Adding the Logo -->
+      <a href="#"><img src="img/logo2.png" alt="" class="logo" onclick="window.location.href='index.html'"/></a>
+      <div>
+        <!-- Nav section -->
+        <ul id="navbar">
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="Sign-up form/index.html">Login</a></li>
+          <li id="lg-bag">
+            <a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+        
+      </div>
+    </section>
+     <!-- Background banner -->
+     <section id="page-header" class="cart-header">
+        <h2>#Happy Shopping</h2>
+        <p>Hope you had a great shopping experience with BuyGenie! Do visit again 😍</p>
+       
+      </section>
+<!-- Product details section -->
+      <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="img/products/f1.jpg" alt=""></td>
+                <td>Casual Shirt for Men</td>
+                <td>₹398</td>
+                <td><input type="number" value="1"></td>
+                <td>₹398</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="img/products/w1.jpg" alt=""></td>
+                <td>Glamorous Women Tops & Tunics</td>
+                <td>₹299</td>
+                <td><input type="number" value="1"></td>
+                <td>₹299</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="img/products/demo3.jpg" alt=""></td>
+                <td>Sneakers for Women (Pink)</td>
+                <td>₹449</td>
+                <td><input type="number" value="1"></td>
+                <td>₹449</td>
+            </tr>
+            </tbody>
+        </table>
+      </section>
+<!-- Coupon and Sub-total section -->
+      <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹1146</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>₹1146</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+      </section>
+
+    <footer class="section-p1 section-m1">
+        <div class="col">
+           <a href="index.html"> <img class="logo" src="img/logo2.png" alt=""></a>
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> JDA Colony, Bhopal, Madhya Pradesh, India</p>
+            <p><strong>Phone: </strong> +91 9874521638 / +91 7683245869</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+  
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="About us page/about_us.html">About us</a>
+            <a href="cart.html">Delivery Information</a>
+            <a href="about.html">Privacy Policy</a>
+            <a href="about.html">Terms & Conditions</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="Sign-up form/index.html">Sign in</a>
+            <a href="cart.html">View Cart</a>
+            <a href="cart.html">My Wishlist</a>
+            <a href="cart.html">Track my order</a>
+            <a href="contact.html">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+               <a href="https://www.apple.com/in/app-store/"> <img src="img/pay/app.jpg" alt=""></a>
+                <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026412_creativeid_535350509915_device_c&gclid=CjwKCAiAxvGfBhB-EiwAMPakqteOimFWGqRfc_MrQhIgvpsGLSlAs6buvyy9y01Yia054AJdh250iRoCguwQAvD_BwE&gclsrc=aw.ds"> <img src="img/pay/play.jpg" alt=""></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>All Rights reserved</p>
+        </div>
+    </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
+  

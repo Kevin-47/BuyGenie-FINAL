@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        h2 {
+            text-align: center;
+        }
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .feedback-item:last-child {
+            border-bottom: none;
+        }
+        .delete-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Submitted Feedback</h2>
+    <div class="feedback-container" id="feedbackList">
+        <!-- Feedback will be displayed here -->
+    </div>
+
+    <script>
+        // Function to display stored feedback
+        function displayFeedback() {
+            const feedbackList = document.getElementById("feedbackList");
+            feedbackList.innerHTML = ""; // Clear existing content
+
+            let feedbacks = JSON.parse(localStorage.getItem("feedbacks")) || [];
+
+            if (feedbacks.length === 0) {
+                feedbackList.innerHTML = "<p style='text-align: center;'>No feedback submitted yet.</p>";
+                return;
+            }
+
+            feedbacks.forEach((item, index) => {
+                const feedbackDiv = document.createElement("div");
+                feedbackDiv.classList.add("feedback-item");
+                feedbackDiv.innerHTML = `
+                    <strong>${item.name}</strong> (${item.email})<br>
+                    <em>${item.subject}</em><br>
+                    <p>${item.message}</p>
+                    <button class="delete-btn" onclick="deleteFeedback(${index})">Delete</button>
+                `;
+                feedbackList.appendChild(feedbackDiv);
+            });
+        }
+
+        // Function to delete feedback
+        function deleteFeedback(index) {
+            let feedbacks = JSON.parse(localStorage.getItem("feedbacks")) || [];
+            feedbacks.splice(index, 1);
+            localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+            displayFeedback();
+        }
+
+        // Load feedback when page loads
+        window.onload = displayFeedback;
+    </script>
+
+</body>
+</html>

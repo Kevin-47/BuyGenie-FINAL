@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bollywood Fashion Trends - Fashion Hub</title>
+  <link rel="shortcut icon" href="img/myimg.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/30e8716a20.js" crossorigin="anonymous"></script>
+  <style>
+    /* Trends page specific styles */
+    .trends-header {
+      background-color: #f5f5f5;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    
+    .trends-header h1 {
+      font-size: 42px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    
+    .trends-header p {
+      font-size: 18px;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .celebrity-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+    
+    .celebrity-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    
+    .celebrity-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    
+    .celebrity-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .celebrity-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .celebrity-image img:hover {
+      transform: scale(1.03);
+    }
+    
+    .celebrity-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .celebrity-info h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    
+    .celebrity-info h3 {
+      font-size: 18px;
+      color: #088178;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    
+    .celebrity-info p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    .shop-look {
+      display: inline-block;
+      background-color: #088178;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .shop-look:hover {
+      background-color: #066a63;
+    }
+    
+    .style-tag {
+      display: inline-block;
+      background-color: #f8f8f8;
+      color: #666;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-right: 8px;
+      margin-bottom: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .celebrity-card, .celebrity-card:nth-child(even) {
+        flex-direction: column;
+      }
+      
+      .trends-header {
+        padding: 40px 20px;
+      }
+      
+      .trends-header h1 {
+        font-size: 32px;
+      }
+      
+      .celebrity-section {
+        padding: 40px 15px;
+        gap: 50px;
+      }
+      
+      .celebrity-info h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <section id="header">
+    <a href="#"><img src="img/logo2.png" alt="" class="logo" onclick="window.location.href='index.html'"/></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="trends.html">Trends</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Sign-up form/index.html">Login</a></li>
+        <li id="lg-bag">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <!-- Trends Header -->
+  <div class="trends-header">
+    <h1>Bollywood Celebrity Fashion Trends</h1>
+    <p>Get inspired by your favorite celebrities and their iconic outfits. Shop similar styles from our curated collections.</p>
+  </div>
+
+  <!-- Celebrity Sections -->
+  <section class="celebrity-section">
+    <!-- Celebrity 1 -->
+    <div class="celebrity-card">
+      <div class="celebrity-image">
+        <img src="img/banner/celeb1.jpg" alt="Deepika Padukone">
+      </div>
+      <div class="celebrity-info">
+        <h2>Deepika Padukone</h2>
+        <h3>Elegant Red Carpet Look</h3>
+        <span class="style-tag">Formal</span>
+        <span class="style-tag">Elegant</span>
+        <span class="style-tag">Red Carpet</span>
+        <p>Deepika stuns in this floor-length emerald green gown with a plunging neckline and structured shoulders. The silk fabric creates a beautiful drape effect while maintaining a sleek silhouette. She pairs the outfit with minimal jewelry - just diamond drop earrings and a statement ring - allowing the gown to be the focal point. Her sleek, pulled-back hairstyle completes this sophisticated look that's perfect for formal events.</p>
+        <a href="shop.html" class="shop-look">Shop Similar Styles</a>
+      </div>
+    </div>
+
+    <!-- Celebrity 2 -->
+    <div class="celebrity-card">
+      <div class="celebrity-image">
+        <img src="img/banner/celeb2.jpg" alt="Ranveer Singh">
+      </div>
+      <div class="celebrity-info">
+        <h2>Ranveer Singh</h2>
+        <h3>Bold Street Style Statement</h3>
+        <span class="style-tag">Street Style</span>
+        <span class="style-tag">Eclectic</span>
+        <span class="style-tag">Colorful</span>
+        <p>Ranveer showcases his signature eccentric style with this vibrant multi-patterned ensemble. He fearlessly mixes a colorful printed shirt with striped pants in contrasting colors. The oversized sunglasses and chunky sneakers add to the bold statement. What makes this outfit work is his confidence and the careful color coordination despite the clashing patterns. This look captures Ranveer's ability to push fashion boundaries while maintaining a cohesive aesthetic.</p>
+        <a href="shop.html" class="shop-look">Shop Similar Styles</a>
+      </div>
+    </div>
+
+    <!-- Celebrity 3 -->
+    <div class="celebrity-card">
+      <div class="celebrity-image">
+        <img src="img/banner/celeb3.jpg" alt="Alia Bhatt">
+      </div>
+      <div class="celebrity-info">
+        <h2>Alia Bhatt</h2>
+        <h3>Casual Chic Daywear</h3>
+        <span class="style-tag">Casual</span>
+        <span class="style-tag">Comfortable</span>
+        <span class="style-tag">Everyday</span>
+        <p>Alia demonstrates effortless casual chic in this comfortable yet stylish outfit. She wears a pastel blue oversized shirt knotted at the waist over white high-waisted jeans, creating a balanced silhouette. The outfit is accessorized with minimal gold jewelry and white sneakers for a fresh, youthful look. This ensemble shows how simple pieces can be styled to create an appealing everyday outfit that's both fashionable and functional.</p>
+        <a href="shop.html" class="shop-look">Shop Similar Styles</a>
+      </div>
+    </div>
+
+    <!-- Celebrity 4 -->
+    <div class="celebrity-card">
+      <div class="celebrity-image">
+        <img src="img/banner/celeb4.jpg" alt="Ranbir Kapoor">
+      </div>
+      <div class="celebrity-info">
+        <h2>Ranbir Kapoor</h2>
+        <h3>Sophisticated Smart Casual</h3>
+        <span class="style-tag">Smart Casual</span>
+        <span class="style-tag">Tailored</span>
+        <span class="style-tag">Minimal</span>
+        <p>Ranbir demonstrates smart casual perfection with this well-tailored outfit. He wears a light blue button-down shirt with rolled-up sleeves paired with navy chinos and brown leather loafers. The fit is impeccable – neither too tight nor too loose – showcasing how important proper sizing is to men's fashion. This understated yet refined look works for various settings from casual meetings to dinner dates, proving that sometimes simplicity is the ultimate sophistication.</p>
+        <a href="shop.html" class="shop-look">Shop Similar Styles</a>
+      </div>
+    </div>
+
+    <!-- Celebrity 5 -->
+    <div class="celebrity-card">
+      <div class="celebrity-image">
+        <img src="img/banner/celeb5.jpg" alt="Priyanka Chopra">
+      </div>
+      <div class="celebrity-info">
+        <h2>Priyanka Chopra</h2>
+        <h3>Global Fashion Icon Look</h3>
+        <span class="style-tag">Contemporary</span>
+        <span class="style-tag">Fusion</span>
+        <span class="style-tag">Statement</span>
+        <p>Priyanka showcases her global fashion sensibility in this contemporary outfit that blends Eastern and Western elements. She wears a white-colored satin pantsuit with intricate gold embroidery inspired by traditional Indian craftsmanship. The tailored silhouette is modern while the detailed workmanship honors her cultural heritage. Her accessories are minimal with just gold stilettos and statement earrings. This look represents her unique position as an international style icon who bridges different fashion worlds.</p>
+        <a href="shop.html" class="shop-look">Shop Similar Styles</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up for Newsletters</h4>
+      <p>
+        Get E-mail updates about the latest shop and
+        <span>special offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address" />
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="section-p1 section-m1">
+    <div class="col">
+      <a href="index.html"> <img class="logo" src="img/logo2.png" alt=""></a>
+      <h4>Contact</h4>
+      <p><strong>Address: </strong> JDA Colony, Bhopal, Madhya Pradesh, India</p>
+      <p><strong>Phone: </strong> +91 9874521638 / +91 7683245869</p>
+      <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="About us page/about_us.html">About us</a>
+      <a href="cart.html">Delivery Information</a>
+      <a href="about.html">Privacy Policy</a>
+      <a href="about.html">Terms & Conditions</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="Sign-up form/index.html">Sign in</a>
+      <a href="cart.html">View Cart</a>
+      <a href="cart.html">My Wishlist</a>
+      <a href="cart.html">Track my order</a>
+      <a href="contact.html">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <a href="https://www.apple.com/in/app-store/"> <img src="img/pay/app.jpg" alt=""></a>
+        <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026412_creativeid_535350509915_device_c&gclid=CjwKCAiAxvGfBhB-EiwAMPakqteOimFWGqRfc_MrQhIgvpsGLSlAs6buvyy9y01Yia054AJdh250iRoCguwQAvD_BwE&gclsrc=aw.ds"> <img src="img/pay/play.jpg" alt=""></a>
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="">
+    </div>
+    <div class="copyright">
+      <p>All Rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

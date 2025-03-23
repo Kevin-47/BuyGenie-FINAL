@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BuyGenie</title>
+    <!-- Adding favicon -->
+    <link rel="shortcut icon" href="img/myimg.png" type="image/x-icon">
+    <!-- Link for CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/30e8716a20.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section id="header">
+      <!-- Adding the Logo -->
+      <a href="#"><img src="img/logo.png" alt="" class="logo" style="width: 150px; height: auto;" onclick="window.location.href='index.html'"/></a>
+
+      <div>
+        <!-- Nav section -->
+        <!-- Update the navbar in all your HTML files (index.html, shop.html, about.html, contact.html, etc.) to include the new Trends link -->
+
+<ul id="navbar">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="trends.html">Trends</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Feedback</a></li>
+  <li><a href="Sign-up form/index.html">Login</a></li>
+  <li id="lg-bag">
+    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </li>
+  <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+</ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+        
+      </div>
+      <div class="user-info">
+        <!-- Streaks Link -->
+        <a href="streaks.html" class="streaks-link">
+            🔥 Streaks: <span id="streak-count">5</span>
+        </a>
+    
+        <!-- Coins Link -->
+        <a href="coins.html" class="coins-link">
+            💰 Coins: <span id="coin-count">120</span>
+        </a>
+    </div>
+    <style>
+      .user-info {
+          float: right;
+          margin-right: 20px;
+      }
+  
+      .user-info a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+          margin-left: 10px;
+      }
+  
+      .user-info a:hover {
+          text-decoration: underline;
+          color: #007BFF;
+      }
+  </style>
+    </section>
+    <!-- Add this section right after the header section and before the hero section -->
+<section id="slideshow-container" class="section-p1">
+  <div class="slides">
+    <div class="slide fade">
+      <div class="slide-content">
+        <h2>SEASON SALE</h2>
+        <h1>Up to 70% OFF</h1>
+        <p>On all premium fashion clothing and accessories</p>
+        <button class="slide-btn" onclick="window.location.href='shop.html'">Shop Now</button>
+      </div>
+      <img src="img/banner/a2.jpg" class="banner1" alt="Fashion Sale">
+    </div>
+
+    <div class="slide fade">
+      <div class="slide-content">
+        <h2>PREMIUM MEMBERSHIP</h2>
+        <h1>Join Our VIP Club</h1>
+        <p>Early access to new collections, exclusive discounts & free shipping</p>
+        <button class="slide-btn" onclick="window.open('premiumMembership.html', '_blank')">Sign Up</button>
+      </div>
+      <img src="img/banner/a4.jpg" class="banner2" alt="Premium Membership">
+    </div>
+
+    <div class="slide fade">
+      <div class="slide-content">
+        <h2>NEW ARRIVALS</h2>
+        <h1>Spring Collection 2025</h1>
+        <p>Discover the latest trends in fashion</p>
+        <button class="slide-btn" onclick="window.location.href='shop2.html'">Explore</button>
+      </div>
+      <img src="img/banner/a3.jpg" alt="New Arrivals">
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/circles -->
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>
+    <!-- Background banner -->
+    <section id="hero">
+      <h4>BuyGenie</h4>
+      <h2>WHERE THE PRIORITY IS YOU!</h2>
+      <!-- <h1>On all products</h1>
+      <p>Save more with coupons & up to 70% off!</p> -->
+      <button onclick="window.location.href='shop.html'">Shop Now</button>
+    </section>
+    <!-- Features section -->
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img src="img/features/f1.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f2.png" alt="" />
+        <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f3.png" alt="" />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f4.png" alt="" />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f5.png" alt="" />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f6.png" alt="" />
+        <h6>24/7 Support</h6>
+      </div>
+    </section>
+    <!-- Featured Products section -->
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/products/f1.jpg" alt="" />
+          <div class="des">
+            <span>LookMark</span>
+            <h5>Men's Regular Fit Casual Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹398</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f2.jpg" alt="" />
+          <div class="des">
+            <span>LookMark</span>
+            <h5>Men's Regular Fit Casual Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹360</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f3.jpg" alt="" />
+          <div class="des">
+            <span>Lyriq</span>
+            <h5>Casual Shirt for Men</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹379</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f4.jpg" alt="" />
+          <div class="des">
+            <span>Parth</span>
+            <h5>Fashion Hub Men's Digital Printed Stylish Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹498</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f5.jpg" alt="" />
+          <div class="des">
+            <span>Parth</span>
+            <h5>Fashion Hub Men's Digital Printed Stylish Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹480</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f6.jpg" alt="" />
+          <div class="des">
+            <span>Lyriq</span>
+            <h5>Casual Shirt for Men</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹358</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m10.jpg" alt="" />
+          <div class="des">
+            <span>Fabulous</span>
+            <h5>Elegant Women Tops & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹299</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/f8.jpg" alt="" />
+          <div class="des">
+            <span>Comfy</span>
+            <h5>Elegant Women Tops & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹250</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Repair services banner -->
+    <section id="banner" class="section-m1">
+      <h4>Repair Services</h4>
+      <h2>Up to <span>70% Off</span> - All t-Shirts & Accessories</h2>
+      <button class="normal" onclick="window.location.href='shop.html'">Explore Now</button>
+    </section>
+    <!-- Latest Arrival products section -->
+    <section id="product1" class="section-p1">
+      <h2>Latest Arrivals</h2>
+      <p>Women Collection New Modern Design</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/products/m1.jpeg" alt="" />
+          <div class="des">
+            <span>Comfy</span>
+            <h5>Classic Glamorous Women & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹258</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m3.jpg" alt="" />
+          <div class="des">
+            <span>Just Fab</span>
+            <h5>Classic Modern Women & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹219</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m4.jpg" alt="" />
+          <div class="des">
+            <span>Comfy</span>
+            <h5>Classic Glamorous Women & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹299</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m5.jpeg" alt="" />
+          <div class="des">
+            <span>Just Fab</span>
+            <h5>Classic Modern Women & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹328</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m6.jpg" alt="" />
+          <div class="des">
+            <span>Fashionable</span>
+            <h5>Trendy Women's Formal Wear </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹278</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m7.jpg" alt="" />
+          <div class="des">
+            <span>Classy dresses</span>
+            <h5>Trendy Women's Formal Wear </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹278</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m8.jpg" alt="" />
+          <div class="des">
+            <span>Classy dresses</span>
+            <h5>Trendy Women's Formal Wear </h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹258</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/m9.jpg" alt="" />
+          <div class="des">
+            <span>Just Fab</span>
+            <h5>Classic Modern Women & Tunics</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>₹290</h4>
+          </div>
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Two banner section -->
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <h4>Crazy Deals</h4>
+        <h2>Buy 1 Get 1 Free</h2>
+        <span>The best classic dress at sale</span>
+        <button class="normal" onclick="window.location.href='shop3.html'">Learn More</button>
+      </div>
+      <div class="banner-box banner-box2">
+        <h4>Spring/Summer</h4>
+        <h2>Upcoming Season</h2>
+        <span>The best classic dress at sale</span>
+        <button class="normal" onclick="window.location.href='shop2.html'">Collection</button>
+      </div>
+    </section>
+    <!-- Three banner section -->
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collections</h3>
+      </div>
+      <div class="banner-box banner-box2">
+        <h2>NEW JACKETS COLLECTION</h2>
+        <h3>Spring/Summer 2023</h3>
+      </div>
+      <div class="banner-box banner-box3">
+        <h2>T-SHIRTS</h2>
+        <h3>New Trendy Picks</h3>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>
+          Get E-mail updates about the latest shopa and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="section-p1 section-m1">
+      <div class="col">
+        <a href="index.html"> 
+          <a href="index.html"> 
+            <img class="logo" src="img/logo2.png" alt="">
+        </a>
+            
+          <h4>Contact</h4>
+          <p><strong>Address: </strong> VIT Bhopal, Bhopal, Madhya Pradesh, India</p>
+          <p><strong>Phone: </strong> +91 9874521638 / +91 7683245869</p>
+          <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+              <h4>Follow us</h4>
+              <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                  <i class="fa-brands fa-youtube"></i>
+              </div>
+          </div>
+
+      </div>
+      <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+    
+            let feedbacks = JSON.parse(localStorage.getItem("feedbacks")) || [];
+            feedbacks.push({ name, email, subject, message });
+    
+            localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+    
+            alert("Feedback submitted successfully!");
+            document.getElementById("feedbackForm").reset();
+        });
+    </script>
+      <div class="col">
+          <h4>About</h4>
+          <a href="About us page/about_us.html">About us</a>
+          <a href="cart.html">Delivery Information</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms & Conditions</a>
+          <a href="contact.html">Contact us</a>
+      </div>
+      <div class="col">
+          <h4>My Account</h4>
+          <a href="Sign-up form/index.html">Sign in</a>
+          <a href="cart.html">View Cart</a>
+          <a href="cart.html">My Wishlist</a>
+          <a href="cart.html">Track my order</a>
+          <a href="contact.html">Help</a>
+      </div>
+      <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+             <a href="https://www.apple.com/in/app-store/"> <img src="img/pay/app.jpg" alt=""></a>
+              <a href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700065205026412_creativeid_535350509915_device_c&gclid=CjwKCAiAxvGfBhB-EiwAMPakqteOimFWGqRfc_MrQhIgvpsGLSlAs6buvyy9y01Yia054AJdh250iRoCguwQAvD_BwE&gclsrc=aw.ds"> <img src="img/pay/play.jpg" alt=""></a>
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="img/pay/pay.png" alt="">
+      </div>
+      <div class="copyright">
+          <p>All Rights reserved</p>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
